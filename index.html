@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Home-Maker</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Manish Kumar</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur voluptate eligendi voluptates illo praesentium molestiae commodi soluta labore ducimus iste, hic repudiandae odit fuga exercitationem beatae, omnis aspernatur excepturi
+                magni?
+            </p>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="twitter.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="linkedin.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggle() {
+            var Sec = document.getElementById('sec');
+            Sec.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
